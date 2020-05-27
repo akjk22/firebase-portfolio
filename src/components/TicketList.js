@@ -19,7 +19,7 @@ function TicketList(props){
     <React.Fragment>
       <hr/>
       {tickets.map((ticket) => {
-        return <Ticket
+        return <TicketList
           whenTicketClicked = { props.onTicketSelection }
           names={ticket.names}
           location={ticket.location}
